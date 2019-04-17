@@ -1,0 +1,62 @@
+    struct Auto * a1 = (struct Auto*) malloc(sizeof (struct Auto));
+    a1->nombre = "Auto 1";
+    a1->prioridad = 2;
+    a1->velocidad = 2;
+    struct Auto * a2 = (struct Auto*) malloc(sizeof (struct Auto));
+    a2->nombre = "Auto 2";
+    a2->prioridad = 1;
+    a2->velocidad = 2;
+    struct Auto * a3 = (struct Auto*) malloc(sizeof (struct Auto));
+    a3->nombre = "Auto 3";
+    a3->prioridad = 1;
+    a3->velocidad = 2;
+    struct Auto * a4 = (struct Auto*) malloc(sizeof (struct Auto));
+    a4->nombre = "Auto 4";
+    a4->prioridad = 1;
+    a4->velocidad = 2;
+    struct Auto * a5 = (struct Auto*) malloc(sizeof (struct Auto));
+    a5->nombre = "Auto 5";
+    a5->prioridad = 1;
+    a5->velocidad = 2;
+    struct Auto * a6 = (struct Auto*) malloc(sizeof (struct Auto));
+    a6->nombre = "Auto 6";
+    a6->prioridad = 1;
+    a6->velocidad = 2;
+    struct Auto * a7 = (struct Auto*) malloc(sizeof (struct Auto));
+    a7->nombre = "Auto 7";
+    a7->prioridad = 1;
+    a7->velocidad = 2;
+    struct Cola* cola = (struct Cola*) malloc(sizeof (struct Cola));
+    enQueue(a1, cola);
+    enQueue(a2, cola);
+    enQueue(a3, cola);
+    enQueue(a4, cola);
+    enQueue(a5, cola);
+    enQueue(a6, cola);
+    enQueue(a7, cola);
+    toString(cola);
+    deQueue(cola);
+    deQueue(cola);
+    deQueue(cola);
+    deQueue(cola);
+    toString(cola);
+
+    printf("Longitud de Puente %d \n"
+            "Datos Este  \n"
+            "Cantidad de carros %d \n"
+            "Promedio de llegada %d \n"
+            "Tiempo de semaforo %d  \n"
+            "Velocidad Maxima  %d \n"
+            "Vecidad Minima %d  \n"
+            "Cantidad de vehiculos por paso %d  \n"
+            "Porcentaje de ambulancias %d \n",
+            PUENTE.longitud, e.k_carros_e, ESTE.pro_lle, e.tie_sem, ESTE.vel_min, ESTE.vel_max, ESTE.k_veh_x_pas, ESTE.k_amb);
+    printf("Datos Oeste  \n"
+            "Cantidad de carros %d \n"
+            "Promedio de llegada %d \n"
+            "Tiempo de semaforo %d  \n"
+            "Velocidad Maxima  %d \n"
+            "Vecidad Minima %d  \n"
+            "Cantidad de vehiculos por paso %d  \n"
+            "Porcentaje de ambulancias %d \n",
+            OESTE.k_carros_e, OESTE.pro_lle, OESTE.tie_sem, o.vel_min, OESTE.vel_max, OESTE.k_veh_x_pas, OESTE.k_amb);
